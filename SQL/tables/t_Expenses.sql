@@ -1,5 +1,5 @@
 create table t_Expenses (
-nId int IDENTITY(1,1) NOT NULL,
+nId int identity(1,1) NOT NULL,
 dtDate datetime2 NOT NULL,
 nUserId int NOT NULL,
 nCategorieId smallint NOT NULL,
