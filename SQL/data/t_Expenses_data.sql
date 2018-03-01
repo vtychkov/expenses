@@ -1,4 +1,4 @@
-insert t_Expenses (dtDate, dSum, nUserId,nCategorieId,nPlaceId,nPaymentTypeId) values
+﻿insert t_Expenses (dtDate, dSum, nUserId,nCategorieId,nPlaceId,nPaymentTypeId) values
 ('20171126',3562,3,6,4,1),
 ('20171127',18365,2,7,3,2),
 ('20171127',520,7,3,1,3),
