@@ -5,7 +5,7 @@ sName nvarchar (100) NOT NULL,
 dtBirthday date,
 sPhone varchar (20),
 sEmail varchar (100)
-
+CONSTRAINT PK_t_Users PRIMARY KEY(nId)
 )
 
 
