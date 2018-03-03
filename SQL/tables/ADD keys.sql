@@ -1,0 +1,10 @@
+ALTER TABLE t_Categories ADD CONSTRAINT PK_t_Categories PRIMARY KEY(nId)
+ALTER TABLE t_Places ADD CONSTRAINT PK_t_Places PRIMARY KEY(nId)
+ALTER TABLE t_Users ADD CONSTRAINT PK_t_Users PRIMARY KEY(nId)
+ALTER TABLE t_PaymentTypes ADD CONSTRAINT PK_t_PaymentTypes PRIMARY KEY(nId)
+ALTER TABLE t_Expenses ADD CONSTRAINT PK_t_Expenses PRIMARY KEY(nId)
+ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_UsersId FOREIGN KEY (nUserId) REFERENCES t_Users(nId)
+ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_PlacesId FOREIGN KEY(nPlaceId ) REFERENCES t_Places(nId)
+ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_PaymentTypesId FOREIGN KEY(nPaymentTypeId ) REFERENCES t_PaymentTypes(nId)
+ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_CategoriesId FOREIGN KEY(nCategorieId ) REFERENCES t_Categories(nId)
+
