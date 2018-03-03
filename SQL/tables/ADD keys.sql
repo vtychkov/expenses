@@ -1,10 +1,14 @@
-ALTER TABLE t_Categories ADD CONSTRAINT PK_t_Categories PRIMARY KEY(nId)
-ALTER TABLE t_Places ADD CONSTRAINT PK_t_Places PRIMARY KEY(nId)
-ALTER TABLE t_Users ADD CONSTRAINT PK_t_Users PRIMARY KEY(nId)
-ALTER TABLE t_PaymentTypes ADD CONSTRAINT PK_t_PaymentTypes PRIMARY KEY(nId)
-ALTER TABLE t_Expenses ADD CONSTRAINT PK_t_Expenses PRIMARY KEY(nId)
-ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_UsersId FOREIGN KEY (nUserId) REFERENCES t_Users(nId)
-ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_PlacesId FOREIGN KEY(nPlaceId ) REFERENCES t_Places(nId)
-ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_PaymentTypesId FOREIGN KEY(nPaymentTypeId ) REFERENCES t_PaymentTypes(nId)
-ALTER TABLE t_Expenses ADD CONSTRAINT FK_t_Expenses_t_CategoriesId FOREIGN KEY(nCategorieId ) REFERENCES t_Categories(nId)
+alter table t_dicCategories add constraint PK_t_dicCategories_nId primary key(nId);
 
+alter table t_dicPlaces add constraint PK_t_dicPlaces_nId primary key(nId);
+alter table t_dicUsers add constraint PK_t_dicUsers_nId primary key(nId);
+alter table t_dicPaymentTypes add constraint PK_t_dicPaymentTypes_nId primary key(nId);
+alter table t_Expenses add constraint PK_t_Expenses_nId primary key(nId);
+
+alter table t_dicCategories add constraint FK_t_dicCategories_t_dicCategories foreign key(nParentId) references t_dicCategories(nId);
+
+alter table t_Expenses add constraint FK_t_Expenses_t_dicUsers foreign key (nUserId) references t_dicUsers(nId);
+alter table t_Expenses add constraint FK_t_Expenses_t_dicPlaces foreign key(nPlaceId) references t_dicPlaces(nId);
+alter table t_Expenses add constraint FK_t_Expenses_t_dicPaymentTypes foreign key(nPaymentTypeId) references t_dicPaymentTypes(nId);
+alter table t_Expenses add constraint FK_t_Expenses_t_dicCategories foreign key(nCategoryId) references t_dicCategories(nId);
+alter table t_Expenses add constraint FK_t_Expenses_t_dicCategories foreign key(nCategoryId) references t_dicCategories(nId); 
