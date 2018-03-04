@@ -2,7 +2,7 @@
 insert into dbo.t_dicPlaces(
 	nId
 	,sName
-	,sAdress
+	,sAddress
 )
 values 
 	(1, N'Глобус', N'дядково'),
