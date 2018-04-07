@@ -1,0 +1,9 @@
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\bin\Debug\netcoreapp2.0\Expenses.DataAccess.deps.json
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\bin\Debug\netcoreapp2.0\Expenses.DataAccess.dll
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\bin\Debug\netcoreapp2.0\Expenses.DataAccess.pdb
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\obj\Debug\netcoreapp2.0\Expenses.DataAccess.csproj.CoreCompileInputs.cache
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\obj\Debug\netcoreapp2.0\Expenses.DataAccess.AssemblyInfoInputs.cache
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\obj\Debug\netcoreapp2.0\Expenses.DataAccess.AssemblyInfo.cs
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\obj\Debug\netcoreapp2.0\Expenses.DataAccess.dll
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\obj\Debug\netcoreapp2.0\Expenses.DataAccess.pdb
+F:\project\expenses\C#\Expenses\Expenses.DataAccess\obj\Debug\netcoreapp2.0\Expenses.DataAccess.csprojResolveAssemblyReference.cache
