@@ -1,7 +1,8 @@
-create procedure api.usp_UserInsert(
+alter procedure api.usp_UserInsert(
 	@psSurname nvarchar(100)
 	,@psName nvarchar(100)
-	,@pdtBirtday date
+	,@pdtBirthday date
+	,@psSex char(1)
 	,@psPhone varchar(20)
 	,@psEmail varchar(100)
 )
@@ -11,13 +12,17 @@ begin
 		sSurname
 		,sName
 		,dtBirthday
+		,sSex
 		,sPhone
 		,sEmail
 	)values(
 		@psSurname
 		,@psName
-		,@pdtBirtday
+		,@pdtBirthday
+		,@psSex
 		,@psPhone
 		,@psEmail
 	);
+
+	--select cast(scope_identity() as int);
 end
