@@ -1,1 +1,0 @@
-execute api.usp_DeleteCategorie  51
