@@ -1,22 +1,22 @@
-﻿set identity_insert dbo.t_dicCategories on;
+﻿delete from dbo.t_dicCategories;
+
+set identity_insert dbo.t_dicCategories on;
+
 insert into dbo.t_dicCategories(
 	nId
 	,sName
 	,nParentId
-)values
-	(1, N'транспорт', null),
-	(2, N'питание', null),
-	(3, N'развлечения', null),
-	(4, N'обучение', null),
-	(5, N'комунальные', null),
-	(6, N'техника', null),
-	(7, N'строительство', null),
-	(8, N'прочее', null),
-	(9, N'бензин',1),
-	(10, N'ремонт',1),
-	(11, N'страхование',1),
-	(12, N'мойка',1),
-	(13, N'свет',5),
-	(14, N'газ',5),
-	(15, N'вода',5);
+)
+values
+	(1, N'Дом', null)
+		,(11, N'ЖКХ', 1)
+		,(12, N'Налог', 1)
+	,(2, N'Питание', null)
+	,(3, N'Транспорт', null)
+		,(31, N'Бензин', 3)
+		,(32, N'Ремонт', 3)
+	,(4, N'Досуг', null)
+		,(41, N'Кино', 4)
+		,(42, N'Кафе', 4);
+
 set identity_insert dbo.t_dicCategories off;
