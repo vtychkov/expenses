@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>expenses</Database>
+    <Server>JUSTEW\SQLEXPRESS</Server>
+    <ConnectionString>Data Source=JUSTEW\SQLEXPRESS;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>OoujafmWQhp072fC7yam4iDvWCc=30.04.2018 11:52:1530.04.2018 11:01:14</TimeStamp>
+        <ID>
+          <String>Expenses</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>zLTs8e126nCz629pv7GDK5GGg8k=30.04.2018 11:14:0530.04.2018 11:03:46</TimeStamp>
+        <ID>
+          <String>Expenses</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2V76K2Qe0EWKoEWvHxxa9eH/lgQ=30.04.2018 11:16:3530.04.2018 11:15:11</TimeStamp>
+        <ID>
+          <String>v Dim Payment Types</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4zg4APzV9A+ZF8DdfpfHhV3FYlg=30.04.2018 12:12:3130.04.2018 11:17:12</TimeStamp>
+        <ID>
+          <String>v Dim Categories</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WSYxcpWk6f0Jc3Cq61dV0fGUW6E=30.04.2018 11:24:2230.04.2018 11:22:31</TimeStamp>
+        <ID>
+          <String>v Dim Periods</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>txd0hAXhXDwj2X7wy00UjvJA+Ls=30.04.2018 11:24:5330.04.2018 11:24:22</TimeStamp>
+        <ID>
+          <String>v Dim Places</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gsoHkidtTnpSemvMMqpNB0cE6bk=30.04.2018 11:29:3930.04.2018 11:27:08</TimeStamp>
+        <ID>
+          <String>v Dim Users</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Ji8nDURdmkGNoWDN/9ilmwLeb+0=30.04.2018 11:29:3930.04.2018 11:29:39nMHICt/zZto/Bol5C7cZPV+MFgA=30.04.2018 11:29:3930.04.2018 11:29:39</TimeStamp>
+        <ID>
+          <String>Expenses</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>TrmgxBTSzu2FE/n70Z1uY5zDQVo=30.04.2018 10:55:1930.04.2018 10:55:19</TimeStamp>
+      <ID>
+        <String>expenses</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-04-30T09:12:39.196667Z</LastDeployed>
+</DeploymentSnapshot>

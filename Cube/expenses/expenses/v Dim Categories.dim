@@ -1,0 +1,226 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="79548a7b-17cf-497d-ab7d-16c6c08225c6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>v Dim Categories</ID>
+  <Name>Категории</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6502" scrolltop="-13824" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17092" y="17542" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="v_dimCategories" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4048" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000d00f0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_v_dimCategories" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6502</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-13824</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="248">
+            <Shape Id="n Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="n Id" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="n Category Level2 Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="n Category Level2 Id" />
+              </Attributes>
+              <Position x="335" y="20" />
+            </Shape>
+            <Shape Id="n Category Level1 Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="n Category Level1 Id" />
+              </Attributes>
+              <Position x="650" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="555af076-cbf6-4e5f-af0b-6454637ac7d9">
+    <DataSourceViewID>Expenses</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="9b9dac3d-0736-49dc-8bb9-e9b2e673b161">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="57b15864-6e54-4d4b-8b65-fe9322500fac">
+      <ID>n Id</ID>
+      <Name>Наименование категории - уровень 3</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="748e719f-b9d3-449f-adff-1c5061789a31">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="338bb74a-5acf-489c-9b77-5c17bb0bc501">
+            <TableID>olap_v_dimCategories</TableID>
+            <ColumnID>nId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cf924d57-ace3-4998-979f-7cd4ee0dae6a">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8ad12359-a5c9-46ec-8f3b-22b5113e6f30">
+          <TableID>olap_v_dimCategories</TableID>
+          <ColumnID>sName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4e36f70f-5901-4215-bca0-95f331c0c8bd">
+          <AttributeID>n Category Level2 Id</AttributeID>
+          <Name>Наименование категории - уровень 2</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a47c3b72-5729-4032-a9c6-1e1c2728c4dd">
+      <ID>n Category Level1 Id</ID>
+      <Name>Наименование категории - уровень 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba1b4c5b-3b43-4049-8a38-f3e04ad2d764">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="274710e5-1481-4964-86a1-f5f8c3e7fd05">
+            <TableID>olap_v_dimCategories</TableID>
+            <ColumnID>nCategoryLevel1Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fe26f2a7-c012-41d4-92a5-f883b4113642">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ef539eb6-3aa2-4e2c-9d9e-c2aec7f2103d">
+          <TableID>olap_v_dimCategories</TableID>
+          <ColumnID>sCategoryLevel1Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c10d60c5-a6f7-4ba8-bd93-0b96c4b0a980">
+      <ID>n Category Level2 Id</ID>
+      <Name>Наименование категории - уровень 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="149b2c95-e0f2-41f2-9187-4c1638cf98f1">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb8dc85e-59df-4169-bc7b-1bb5dec4b85e">
+            <TableID>olap_v_dimCategories</TableID>
+            <ColumnID>nCategoryLevel2Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4f4c1691-7c0e-4276-8a43-816fabe7f697">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="32254002-fcf6-4d7f-8918-9919d53502b8">
+          <TableID>olap_v_dimCategories</TableID>
+          <ColumnID>sCategoryLevel2Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="dc9ac2d5-b61f-41f0-9cd5-eff63be95a0e">
+          <AttributeID>n Category Level1 Id</AttributeID>
+          <Name>Наименование категории - уровень 1</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="efcc36f0-b1db-44dd-b3f5-c97b6b90890b">
+      <ID>Иерархия</ID>
+      <Name>Категории</Name>
+      <Levels>
+        <Level dwd:design-time-name="a8c99523-dea8-4034-b165-504ad293e609">
+          <ID>Наименование категории - уровень 1</ID>
+          <Name>Наименование категории - уровень 1</Name>
+          <SourceAttributeID>n Category Level1 Id</SourceAttributeID>
+          <HideMemberIf>ParentName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="2be432f5-56ae-4782-8dbe-9baa71091754">
+          <ID>Наименование категории - уровень 2</ID>
+          <Name>Наименование категории - уровень 2</Name>
+          <SourceAttributeID>n Category Level2 Id</SourceAttributeID>
+          <HideMemberIf>ParentName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="3ed45df6-2976-4f5f-8264-d9c265f26cdb">
+          <ID>Наименование категории - уровень 3</ID>
+          <Name>Наименование категории - уровень 3</Name>
+          <SourceAttributeID>n Id</SourceAttributeID>
+          <HideMemberIf>ParentName</HideMemberIf>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,247 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8465b061-1043-4037-a0f4-de9de53fb061" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Expenses</ID>
+  <Name>Expenses</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="0353bd10-e927-46fc-80af-433e4b5a2002">
+      <ID>v Dim Periods</ID>
+      <Name>v Dim Periods</Name>
+      <DimensionID>v Dim Periods</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="28baa9ad-41e2-437c-8889-10d571e46416">
+          <AttributeID>n Date Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="db7906b6-4f38-48eb-a9c3-c77865b09142">
+      <ID>v Dim Places</ID>
+      <Name>v Dim Places</Name>
+      <DimensionID>v Dim Places</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="222a24d8-91ed-4a4d-9084-4c62cda63c85">
+          <AttributeID>n Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7148d27c-f8c8-4f78-a4f4-e8b95656a3c5">
+      <ID>v Dim Users</ID>
+      <Name>v Dim Users</Name>
+      <DimensionID>v Dim Users</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="90ee8a53-7fa5-4c9f-be42-1c6929d25887">
+          <AttributeID>n Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80c18934-6036-4af1-adef-e6c413952242">
+          <AttributeID>s Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ce262b2-7a9b-4767-834b-b95d867acc7e">
+          <AttributeID>s Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1be06b5d-e922-49d8-ab91-1032c344e299">
+          <AttributeID>Dt Birthday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="026bab61-c0e8-4afa-8aff-c49e85857c8c">
+          <AttributeID>s Sex</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="82c13b7d-904e-420f-99b0-60a3006f850e">
+          <AttributeID>s Phone</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="626b0b06-cfcf-4d93-9de2-8f6a04e70ae6">
+      <ID>Категории</ID>
+      <Name>Категории</Name>
+      <DimensionID>v Dim Categories</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="be8b5cbb-d60b-4651-a468-6cdfa3962c84">
+          <AttributeID>n Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab921273-3b90-4022-a17a-044bb65b7650">
+          <AttributeID>n Category Level1 Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="19b33e90-f94d-4b4d-a7c3-f19997e0ad67">
+          <AttributeID>n Category Level2 Id</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f872925e-4596-4d0b-b285-a8e729ef8aaa">
+          <HierarchyID>Иерархия</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5d32bfaf-b472-42e9-b493-c1afbbd9855c">
+      <ID>Типы оплат</ID>
+      <Name>Типы оплат</Name>
+      <DimensionID>v Dim Payment Types</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6b6a2359-08e1-495e-a83f-8b86c7e234b8">
+          <AttributeID>n Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d0f60837-e0bc-4349-88f2-5b42481bf541">
+      <ID>v Fct Measures</ID>
+      <Name>v Fct Measures</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="05256d67-14f7-41ea-b877-c4797eb354de">
+          <ID>d Sum</ID>
+          <Name>d Sum</Name>
+          <Source dwd:design-time-name="2ae1b0e0-f36d-481b-8d7e-cf9b58bbe7e6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="619be281-60b0-4c0f-b7bb-3a6bf115678c">
+              <TableID>olap_v_fctMeasures</TableID>
+              <ColumnID>dSum</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="29474c58-77d8-45cd-b232-d8fcd30cfd1b">
+          <CubeDimensionID>v Dim Periods</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="209048e3-ff98-4a3d-8714-e7779e9c51f0">
+              <AttributeID>n Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="46723921-32b0-496e-9ed8-e24289747d12">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bccec84a-7e89-476d-b0f3-60ae07a91a3e">
+                    <TableID>olap_v_fctMeasures</TableID>
+                    <ColumnID>nDateId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="91363cfd-e00a-4e77-836d-56141be8b0d8">
+          <CubeDimensionID>v Dim Places</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b29df45-04d0-4300-83bc-d3b8e82cbeb1">
+              <AttributeID>n Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="971fb4f5-d5e0-4574-9d36-03192db273f3">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39f2592c-26c6-422c-9add-b13b5ff4b1c7">
+                    <TableID>olap_v_fctMeasures</TableID>
+                    <ColumnID>nPlaceId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e046b435-339d-4692-b4aa-363f6d1ebda4">
+          <CubeDimensionID>v Dim Users</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1bd36b6b-6771-4a07-9128-5aa82479f6a3">
+              <AttributeID>n Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="80fed50f-394a-41d7-830e-c45873d039ed">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3cc888c2-2487-4acc-befc-eda83b307389">
+                    <TableID>olap_v_fctMeasures</TableID>
+                    <ColumnID>nUserId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="442883fa-48c4-4d9d-90f1-e23b3d283a26">
+          <CubeDimensionID>Категории</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9a67c9e6-7ed6-4335-b413-e2ebc05e5ebf">
+              <AttributeID>n Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8f0456f0-40f4-42ef-bbba-484d88d577c7">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="12167ba9-0ab1-4d0b-9229-9f071a055373">
+                    <TableID>olap_v_fctMeasures</TableID>
+                    <ColumnID>nCategoryId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f492e4c-6c49-443c-8d82-6f3e0e5ed9d1">
+          <CubeDimensionID>Типы оплат</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0d3360f4-e12d-4142-ac00-691be7f4f8b7">
+              <AttributeID>n Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4d46ab8a-b24d-4f80-84c1-698a6f2e6a0b">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="70a27ec7-de53-4897-813c-a77822007598">
+                    <TableID>olap_v_fctMeasures</TableID>
+                    <ColumnID>nPaymentTypeId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="91455250-60a9-4e89-9bea-8c30fe09bd66">
+    <DataSourceViewID>Expenses</DataSourceViewID>
+  </Source>
+</Cube>
